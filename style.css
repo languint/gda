@@ -1,5 +1,5 @@
 :root {
-    --gda-red: #F26B66;
+    --gda-red: #B4FF00;
     --background: #111D0A;
     --surface: #354149;
     --border-color: #90CC00;
@@ -144,6 +144,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #map {
