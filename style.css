@@ -217,10 +217,6 @@ button:hover {
     color: var(--background);
 }
 
-i {
-    color: var(--gda-red);
-}
-
 #service-members-container {
     display: flex;
     flex-direction: column;
