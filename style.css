@@ -76,6 +76,14 @@ body {
 #hero {
     display: flex;
     width: calc(100% - 200px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 1rem;
+}
+
+#hero-top {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem 1rem;
@@ -209,6 +217,31 @@ button:hover {
     color: var(--background);
 }
 
-b {
+i {
     color: var(--gda-red);
+}
+
+#service-members-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: var(--surface);
+    border: 1px dashed var(--border-color);
+    border-radius: 1em;
+    padding: 0 1em;
+    margin-top: 1em;
+    gap: 1em 1em;
+}
+
+#service-members-container h3 {
+    font-weight: 400;
+}
+
+#service-members-count {
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--gda-red);
+    text-align: center;
 }
