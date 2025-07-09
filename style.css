@@ -1,8 +1,8 @@
 :root {
     --gda-red: #F26B66;
-    --background: #273036;
+    --background: #111D0A;
     --surface: #354149;
-    --border-color: #404f58;
+    --border-color: #90CC00;
     --text: #f0f0f0;
 }
 
@@ -90,8 +90,12 @@ body {
 }
 
 #hero-logo {
-    display: flex;
-    width: calc(20%);
+    width: 25%;
+    max-width: 300px;
+    min-width: 100px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 200ms ease-in-out;
 }
 
 #hero-logo:hover {
@@ -123,18 +127,6 @@ body {
     width: 100px;
 }
 
-#pre-container {
-    display: flex;
-    justify-items: center;
-    width: 100%;
-    margin-bottom: -5px;
-}
-
-#pre-container>svg {
-    width: 100%;
-    display: block;
-}
-
 #container {
     display: flex;
     flex-direction: column;
@@ -142,6 +134,8 @@ body {
     background-color: var(--background);
     border-top: 0px;
     border-bottom: 0px;
+    margin-top: 32em;
+    border-top: 1px solid #90CC00;
 }
 
 #map-container {
@@ -180,7 +174,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--surface);
+    background-image: url(static/card.png);
+    background-size: cover;
     padding: 2em;
     border: var(--border-color) 1px dashed;
     border-radius: 1em;
@@ -245,5 +240,5 @@ button:hover {
 #negative {
     color: var(--background);
     padding-inline: 0.25em;
-    background-color: #FFF;
+    background-color: #90CC00;
 }
