@@ -13,7 +13,7 @@ async function fetchPlayerCount() {
             mode: "no-cors",
             headers: []
         });
-        if (response.ok) {
+        if (response.json()) {
             const data = await response.json();
             return data.data[0]?.playing ?? 0;
         } else {
