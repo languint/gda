@@ -245,3 +245,9 @@ i {
     color: var(--gda-red);
     text-align: center;
 }
+
+#negative {
+    color: var(--background);
+    padding-inline: 0.25em;
+    background-color: #FFF;
+}
