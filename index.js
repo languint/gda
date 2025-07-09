@@ -1,6 +1,6 @@
 const ENLIST_URL = "https://my.goarmy.com/?loginPg=ace";
 const UNIVERSE_ID = "3541611379";
-const PLAYER_COUNT_ENDPOINT = "https://games.roblox.com/v1/games?universeIds=";
+const PLAYER_COUNT_ENDPOINT = "https://thingproxy.freeboard.io/fetch/https://games.roblox.com/v1/games?universeIds=";
 const serviceMembersCountElement = document.getElementById("service-members-count");
 
 function redirectToUS() {
