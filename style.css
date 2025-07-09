@@ -12,12 +12,61 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    font-family: "Work Sans", sans-serif;
+}
+
+#carousel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-color: var(--background);
+}
+
+.carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    animation: fade 30s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#main-content {
     display: flex;
+    padding-top: 8em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/static/background.png);
-    font-family: "Work Sans", sans-serif;
+    z-index: 1;
 }
 
 #hero {
@@ -31,6 +80,11 @@ body {
 #hero-logo {
     display: flex;
     width: calc(20%);
+}
+
+#hero-logo:hover {
+    transform: scale(1.2);
+    transition-duration: 200ms;
 }
 
 #hero-text {
@@ -65,6 +119,7 @@ body {
 
 #container {
     display: flex;
+    flex-direction: column;
     width: calc(100% - 200px);
     background-color: var(--background);
     border: var(--border-color) 1px solid;
@@ -84,6 +139,7 @@ button {
     gap: 2em;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 button i {
