@@ -10,7 +10,8 @@ function redirectToUS() {
 async function fetchPlayerCount() {
     try {
         const response = await fetch(PLAYER_COUNT_ENDPOINT + UNIVERSE_ID, {
-            mode: "cors",
+            mode: "no-cors",
+            headers: []
         });
         if (response.ok) {
             const data = await response.json();
